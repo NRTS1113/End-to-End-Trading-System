@@ -1,29 +1,3 @@
-# End-to-End Trading System
-
-**FINM_32500 - Financial Mathematics**
-**University of Chicago**
-
-A complete algorithmic trading system implementation featuring data acquisition, strategy development, backtesting framework, and live trading integration with Alpaca.
-
----
-
-## Table of Contents
-
-1. [Project Overview](#project-overview)
-2. [System Architecture](#system-architecture)
-3. [Installation](#installation)
-4. [Quick Start Guide](#quick-start-guide)
-5. [Part 1: Data Download and Preparation](#part-1-data-download-and-preparation)
-6. [Part 2: Backtester Framework](#part-2-backtester-framework)
-7. [Part 3: Strategy Backtesting](#part-3-strategy-backtesting)
-8. [Part 4: Alpaca Trading Integration](#part-4-alpaca-trading-integration)
-9. [File Structure](#file-structure)
-10. [Examples](#examples)
-11. [Performance Metrics](#performance-metrics)
-12. [Safety and Best Practices](#safety-and-best-practices)
-
----
-
 ## Project Overview
 
 This project implements a complete end-to-end algorithmic trading system with the following capabilities:
@@ -386,40 +360,9 @@ The backtester calculates:
 - **Fill Rate**: Percentage of orders filled
 - **Average Slippage**: Average execution slippage
 
----
-
-## Safety and Best Practices
-
-### Paper Trading Only
-
-- **NEVER add real money** to your Alpaca account for this project
-- Always use paper trading keys (`https://paper-api.alpaca.markets`)
-
-### API Key Security
-
-- **NEVER commit API keys** to version control
-- Use environment variables
-- Rotate keys if accidentally exposed
-
-### Risk Management
-
-The system includes built-in risk controls:
-- Capital sufficiency checks
-- Position size limits (default: 30% of capital)
-- Order rate limiting (default: 100 orders/minute)
-
----
-
 ## Additional Resources
 
 - **Alpaca Documentation**: [https://alpaca.markets/docs/](https://alpaca.markets/docs/)
 - **yfinance Documentation**: [https://pypi.org/project/yfinance/](https://pypi.org/project/yfinance/)
 - **Binance API**: [https://binance-docs.github.io/apidocs/](https://binance-docs.github.io/apidocs/)
 
----
-
-## License
-
-This project is for educational purposes as part of FINM_32500 at the University of Chicago.
-
-**Remember**: This is a learning project. Always use paper trading and never risk real capital!
